@@ -1,8 +1,6 @@
 print("Welcome to my Computer Quiz!")
 
-playing = input("Do you want to play? ")
-
-print(playing)
+playing = input("Do you want to play? ").lower()
 
 while playing != "yes":
     print("Please answer with 'yes' to play the game.")
@@ -33,20 +31,20 @@ if answer == "random access memory":
     print('Correct')
     score += 1
 else:
-    print("Incorrect! The correct answer is 'Graphics Processing Unit'.")
+    print("Incorrect! The correct answer is 'Random Access Memory'.")
 
 answer = input("What does PSU stand for? ").lower()
 if answer == "power supply":
     print("Correct!")
     score += 1
 else:
-    print("Incorrect! The correct answer is 'Graphics Processing Unit'.")
+    print("Incorrect! The correct answer is 'Power Supply'.")
     print("Incorrect!")
 
 print(f"Game Over! Your score: {score}")
 print("You got " + str((score / 4) * 100) + "%.")
 
-if score == 5:
+if score == 4:
     print("Perfect!")
 elif score <= 1:
     print("I think you need to study..")

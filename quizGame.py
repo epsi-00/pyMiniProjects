@@ -28,7 +28,7 @@ else:
 
 answer = input("What does RAM stand for? ").lower()
 if answer == "random access memory":
-    print('Correct')
+    print("Correct!")
     score += 1
 else:
     print("Incorrect! The correct answer is 'Random Access Memory'.")
@@ -39,7 +39,6 @@ if answer == "power supply":
     score += 1
 else:
     print("Incorrect! The correct answer is 'Power Supply'.")
-    print("Incorrect!")
 
 print(f"Game Over! Your score: {score}")
 print("You got " + str((score / 4) * 100) + "%.")
